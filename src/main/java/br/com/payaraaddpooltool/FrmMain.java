@@ -56,7 +56,7 @@ public class FrmMain {
     private Button clearButton;
 
     @FXML
-    private TextField passwordInput; // Campo para mostrar a senha (TextField)
+    private TextField passwordInput;
 
     @FXML
     private void initialize() {
