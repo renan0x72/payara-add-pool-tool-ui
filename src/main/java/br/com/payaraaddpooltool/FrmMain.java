@@ -14,7 +14,7 @@ public class FrmMain {
 
     @FXML
     private TextField payaraPathInput;
-    
+
     @FXML
     private TextField payaraPortInput;
 
@@ -26,9 +26,6 @@ public class FrmMain {
 
     @FXML
     private TextField userInput;
-
-    @FXML
-    private PasswordField passwordInput;
 
     @FXML
     private ChoiceBox<String> databaseChoiceBox;
@@ -46,9 +43,12 @@ public class FrmMain {
     private Button clearButton;
 
     @FXML
+    private TextField passwordInput; // Campo para mostrar a senha (TextField)
+
+    @FXML
     private void initialize() {
         // Inicializando valores padrão
-        titleLabel.setText("Add Pool Payara Tool");
+        titleLabel.setText("Add Pool to Payara");
 
         // Adiciona itens ao ChoiceBox
         databaseChoiceBox.setItems(FXCollections.observableArrayList("db1", "homologa"));
