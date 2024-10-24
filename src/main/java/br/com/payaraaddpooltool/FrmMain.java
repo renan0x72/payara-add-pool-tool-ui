@@ -3,7 +3,9 @@ package br.com.payaraaddpooltool;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import org.w3c.dom.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -12,6 +14,8 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 /**
  * Controller class for the main form.
@@ -84,7 +88,7 @@ public class FrmMain {
             passwordInput.setText(doc.getElementsByTagName("password").item(0).getTextContent());
             databaseChoiceBox.setText(doc.getElementsByTagName("database").item(0).getTextContent());
             poolIdInput.setText(doc.getElementsByTagName("poolId").item(0).getTextContent());
-        } catch (Exception e) {
+        } catch (IOException | ParserConfigurationException | DOMException | SAXException e) {
             Logger.getLogger(FrmMain.class.getName()).log(Level.SEVERE, null, e);
         }
     }
@@ -170,7 +174,7 @@ public class FrmMain {
 
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.transform(source, result);
-        } catch (Exception e) {
+        } catch (FileNotFoundException | IllegalArgumentException | ParserConfigurationException | TransformerException | DOMException e) {
             Logger.getLogger(FrmMain.class.getName()).log(Level.SEVERE, null, e);
         }
     }

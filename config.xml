@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <config>
     <payaraPath>/media/WORKSPACE/WORKSPACE/workspace-java/servers/payara6</payaraPath>
-    <ip>192.168.0.1</ip>
+    <ip>172.0.0.75</ip>
     <payaraPort>4848</payaraPort>
     <dbPort>5430</dbPort>
     <user>WEB</user>
     <password>SENHA-55</password>
-    <database>homologa</database>
-    <poolId>0111A</poolId>
+    <database>db1</database>
+    <poolId>7545</poolId>
 </config>
