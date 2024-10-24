@@ -49,7 +49,7 @@
     <!-- Base de dados ChoiceBox -->
     <HBox spacing="10">
         <Label text="Database:" />
-        <ChoiceBox fx:id="databaseChoiceBox" />
+        <TextField fx:id="databaseChoiceBox" promptText="name database" text="db1"/>
     </HBox>
 
     <!-- Campo para Pool ID -->

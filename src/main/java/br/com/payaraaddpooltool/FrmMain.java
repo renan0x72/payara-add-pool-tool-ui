@@ -28,7 +28,7 @@ public class FrmMain {
     private TextField userInput;
 
     @FXML
-    private ChoiceBox<String> databaseChoiceBox;
+    private TextField databaseChoiceBox;
 
     @FXML
     private TextField poolIdInput;
@@ -49,10 +49,6 @@ public class FrmMain {
     private void initialize() {
         // Inicializando valores padrão
         titleLabel.setText("Add Pool to Payara");
-
-        // Adiciona itens ao ChoiceBox
-        databaseChoiceBox.setItems(FXCollections.observableArrayList("db1", "homologa"));
-        databaseChoiceBox.setValue("db1");  // Define valor padrão
     }
 
     @FXML
@@ -64,7 +60,7 @@ public class FrmMain {
         String portaDb = portInput.getText();
         String user = userInput.getText();
         String password = passwordInput.getText();
-        String database = databaseChoiceBox.getValue();
+        String database = databaseChoiceBox.getText();
         String poolId = poolIdInput.getText();
 
         // Script 1: Monta o comando de criação do pool JDBC
