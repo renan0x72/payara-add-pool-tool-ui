@@ -14,6 +14,10 @@
             <id>openjfx</id>
             <url>https://openjfx.io</url>
         </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -25,6 +29,11 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>21.0.1</version> <!-- Atualizado para a versão 21 -->
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>3.0.1</version>
         </dependency>
     </dependencies>
     <build>
