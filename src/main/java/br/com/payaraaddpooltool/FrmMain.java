@@ -53,6 +53,7 @@ public class FrmMain {
 
     @FXML
     private void handleButtonClick() {
+        outputArea.clear();
         // Obtém os valores dos campos
         String payaraPath = payaraPathInput.getText();
         String ip = ipInput.getText();
