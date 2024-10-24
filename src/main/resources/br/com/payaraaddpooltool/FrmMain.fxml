@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.com.payaraaddpooltool.FrmMain"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Add Pool Payara Tool" fx:id="titleLabel" style="-fx-font-size: 18px;"/>
+
+    <!-- Campo para caminho do Payara -->
+    <HBox spacing="10">
+        <Label text="Path Payara:"/>
+        <TextField fx:id="payaraPathInput" promptText="/caminho/do/payara"/>
+    </HBox>
+    
+    <!-- Campo para porta do servidor Payara -->
+    <HBox spacing="10">
+        <Label text="Payara Server Port:"/>
+        <TextField fx:id="payaraPortInput" promptText="4848"/> <!-- Define um valor padrão, se desejar -->
+    </HBox>
+
+    <!-- Campo para IP e Porta -->
+    <HBox spacing="10">
+        <Label text="IP Cliente:"/>
+        <TextField fx:id="ipInput" promptText="192.168.0.1"/>
+        <Label text="Porta:"/>
+        <TextField fx:id="portInput" promptText="5430" text="5430"/>
+    </HBox>
+
+    <!-- Campo para Usuário e Senha -->
+    <HBox spacing="10">
+        <Label text="User:"/>
+        <TextField fx:id="userInput" promptText="WEB" text="WEB"/>
+        <Label text="Senha:"/>
+        <PasswordField fx:id="passwordInput" promptText="t00r" text="t00r"/>
+    </HBox>
+
+    <!-- Base de dados ChoiceBox -->
+    <HBox spacing="10">
+        <Label text="Base de dados:"/>
+        <ChoiceBox fx:id="databaseChoiceBox"/>
+    </HBox>
+
+    <!-- Campo para Pool ID -->
+    <HBox spacing="10">
+        <Label text="Pool ID:"/>
+        <TextField fx:id="poolIdInput" promptText="Identificador do pool"/>
+    </HBox>
+
+    <!-- Botões de ação -->
+    <HBox spacing="10">
+        <Button text="Executar" onAction="#handleButtonClick" fx:id="primaryButton"/>
+        <Button text="Limpar" onAction="#handleClearButtonClick" fx:id="clearButton"/>
+    </HBox>
+
+    <!-- TextArea para saída de resultado -->
+    <TextArea fx:id="outputArea" prefRowCount="10" editable="false"/>
+
+</VBox>
