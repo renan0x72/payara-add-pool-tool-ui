@@ -56,6 +56,7 @@ public class ProcessCommand {
             }
 
         } catch (IOException | InterruptedException e) {
+            Logger.getLogger(FrmMain.class.getName()).log(Level.SEVERE, null, e);
             return "Erro ao executar comando: " + e.getMessage();
         }
 
