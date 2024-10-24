@@ -1,0 +1,51 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Folder
+target/
+
+# Maven specific files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/MavenWrapperDownloader.java
+
+# JavaFX cache
+.jfxcache/
+
+# NetBeans specific files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse specific files
+.project
+.classpath
+.csettings/
+.settings/
+bin/
