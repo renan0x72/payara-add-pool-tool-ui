@@ -10,6 +10,9 @@ Este projeto é uma aplicação JavaFX que permite adicionar um pool ao servidor
 
 ## Estrutura da Interface
 
+![Exemplo de Interface](images/ScreenshotApp.png)
+![Exemplo de pool adicionada](images/Screenshot4848.png)
+
 A interface é composta por:
 
 - **Campo para caminho do Payara**: Onde você insere o caminho do seu diretório Payara.
