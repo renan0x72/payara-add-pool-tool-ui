@@ -33,3 +33,10 @@ Para compilar o projeto, use o seguinte comando:
 
 ```bash
 mvn clean install -U
+
+## Execução
+
+Após a compilação, você pode executar a aplicação usando:
+
+```bash
+java -jar target/PayaraAddPoolTool-1.5.jar
